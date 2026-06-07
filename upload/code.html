@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EliteOps | Discover World-Class Opportunities</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "background": "#f7f9fb",
+                      "surface-dim": "#d8dadc",
+                      "outline-variant": "#bdcaba",
+                      "brand-dark-green": "#176E4B",
+                      "surface-tint": "#006e2d",
+                      "text-primary": "#0F172A",
+                      "on-primary": "#ffffff",
+                      "surface-container-low": "#f2f4f6",
+                      "on-tertiary-fixed-variant": "#005321",
+                      "on-primary-container": "#f7fff2",
+                      "primary": "#006b2c",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-error-container": "#93000a",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-variant": "#e0e3e5",
+                      "tertiary-fixed-dim": "#4ae176",
+                      "text-secondary": "#64748B",
+                      "on-tertiary": "#ffffff",
+                      "tertiary": "#006b2d",
+                      "surface": "#f7f9fb",
+                      "on-surface": "#191c1e",
+                      "tertiary-container": "#00873b",
+                      "on-background": "#191c1e",
+                      "on-secondary-container": "#5c647a",
+                      "tertiary-fixed": "#6bff8f",
+                      "error": "#ba1a1a",
+                      "secondary-container": "#dae2fd",
+                      "primary-fixed-dim": "#62df7d",
+                      "on-tertiary-fixed": "#002109",
+                      "on-secondary-fixed": "#131b2e",
+                      "on-error": "#ffffff",
+                      "surface-container": "#eceef0",
+                      "inverse-primary": "#62df7d",
+                      "outline": "#6e7b6c",
+                      "surface-navy": "#1E293B",
+                      "on-primary-fixed": "#002109",
+                      "on-tertiary-container": "#f7fff3",
+                      "on-surface-variant": "#3e4a3d",
+                      "on-primary-fixed-variant": "#005320",
+                      "primary-fixed": "#7ffc97",
+                      "primary-container": "#00873a",
+                      "surface-bright": "#f7f9fb",
+                      "secondary": "#565e74",
+                      "error-container": "#ffdad6",
+                      "inverse-surface": "#2d3133",
+                      "surface-container-high": "#e6e8ea",
+                      "secondary-fixed": "#dae2fd",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#3f465c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "40px"
+              },
+              "fontFamily": {
+                      "body-md": ["DM Sans"],
+                      "title-lg": ["Sora"],
+                      "headline-lg-mobile": ["Sora"],
+                      "label-md": ["DM Sans"],
+                      "body-lg": ["DM Sans"],
+                      "body-sm": ["DM Sans"],
+                      "headline-md": ["Sora"],
+                      "headline-lg": ["Sora"],
+                      "display-lg": ["Sora"],
+                      "label-sm": ["DM Sans"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .glass-header {
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .opportunity-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+        }
+        .smooth-shadow {
+            shadow: 0 4px 20px 0 rgba(0,0,0,0.05);
+        }
+        .map-bg {
+            background-image: radial-gradient(circle at 2px 2px, #e2e8f0 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-text-primary font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-navy/80 backdrop-blur-md border-b border-surface-variant/20 shadow-sm">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-16">
+<div class="flex items-center gap-unit">
+<span class="text-title-lg font-title-lg font-bold text-text-primary dark:text-on-primary">EliteOps</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-label-md font-label-md text-primary dark:text-primary-fixed relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-primary after:rounded-full transition-colors duration-200" href="#">Opportunities</a>
+<a class="font-body-md text-label-md font-label-md text-text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors duration-200" href="#">Success Stories</a>
+<a class="font-body-md text-label-md font-label-md text-text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors duration-200" href="#">Resources</a>
+<a class="font-body-md text-label-md font-label-md text-text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors duration-200" href="#">Community</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full text-label-md font-label-md hover:opacity-90 active:scale-95 transition-all">
+                Join WhatsApp Channel
+            </button>
+</nav>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 map-bg opacity-40"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<div class="flex flex-col items-start gap-6">
+<span class="px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm border border-primary/10">
+                        80,000+ Students Impacted Across 80+ Countries
+                    </span>
+<h1 class="font-display-lg text-display-lg leading-tight tracking-tight">
+                        Discover Opportunities That Can <span class="text-primary italic">Change Your Future</span>
+</h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-lg">
+                        Access a curated ecosystem of world-class scholarships, elite internships, and global fellowships designed for the ambitious student.
+                    </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+                            Explore Opportunities
+                        </button>
+<button class="bg-surface border border-outline/20 text-text-primary px-8 py-4 rounded-xl font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+                            Join WhatsApp Channel
+                        </button>
+</div>
+</div>
+<div class="relative h-[600px] hidden lg:block">
+<!-- Interactive Elements (Simulated) -->
+<div class="absolute inset-0 bg-[url('https://api.dicebear.com/7.x/shapes/svg?seed=map')] opacity-5 scale-150 rotate-12"></div>
+<!-- Floating Cards -->
+<div class="absolute top-1/4 left-10 bg-white p-4 rounded-xl shadow-xl border border-outline-variant/30 animate-bounce duration-[3000ms]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined">school</span>
+</div>
+<div>
+<p class="text-label-sm font-bold">Rhodes Scholarship</p>
+<p class="text-[10px] text-text-secondary">Oxford, UK • Fully Funded</p>
+</div>
+</div>
+</div>
+<div class="absolute bottom-1/3 right-4 bg-white p-4 rounded-xl shadow-xl border border-outline-variant/30 animate-pulse">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">work</span>
+</div>
+<div>
+<p class="text-label-sm font-bold">Google STEP</p>
+<p class="text-[10px] text-text-secondary">Engineering Intern • Global</p>
+</div>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-primary/10 rounded-full flex items-center justify-center">
+<div class="w-[300px] h-[300px] border border-primary/20 rounded-full animate-[spin_20s_linear_infinite]">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-12 border-y border-outline-variant/30 py-16">
+<div class="flex flex-col gap-2">
+<span class="font-display-lg text-display-lg text-primary">80k+</span>
+<p class="font-label-md text-label-md text-text-secondary uppercase tracking-widest">Students Empowered</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-display-lg text-display-lg text-primary">80+</span>
+<p class="font-label-md text-label-md text-text-secondary uppercase tracking-widest">Countries Reached</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-display-lg text-display-lg text-primary">12k+</span>
+<p class="font-label-md text-label-md text-text-secondary uppercase tracking-widest">Opportunities Shared</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-display-lg text-display-lg text-primary">$4M+</span>
+<p class="font-label-md text-label-md text-text-secondary uppercase tracking-widest">Funding Secured</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-24">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col gap-4 mb-16 max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg">Curation by Domain</h2>
+<p class="font-body-lg text-body-lg text-text-secondary">We filter through thousands of global announcements to bring you only the most prestigious and high-impact programs.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category Cards -->
+<div class="group bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6 block">auto_stories</span>
+<h3 class="font-title-lg text-title-lg mb-2">Scholarships</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Fully funded undergraduate and postgraduate funding.</p>
+</div>
+<div class="group bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6 block">stars</span>
+<h3 class="font-title-lg text-title-lg mb-2">Fellowships</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Elite professional and research residencies worldwide.</p>
+</div>
+<div class="group bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6 block">work</span>
+<h3 class="font-title-lg text-title-lg mb-2">Internships</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Career-launching roles at Fortune 500 and tech giants.</p>
+</div>
+<div class="group bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6 block">biotech</span>
+<h3 class="font-title-lg text-title-lg mb-2">Research</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Lab positions and grants for groundbreaking projects.</p>
+</div>
+<div class="group bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6 block">groups</span>
+<h3 class="font-title-lg text-title-lg mb-2">Conferences</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Fully funded travel grants for global networking.</p>
+</div>
+<div class="group bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6 block">emoji_events</span>
+<h3 class="font-title-lg text-title-lg mb-2">Competitions</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Hackathons and case competitions with major prizes.</p>
+</div>
+<div class="group bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6 block">public</span>
+<h3 class="font-title-lg text-title-lg mb-2">Exchange</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Cross-cultural semester programs and youth summits.</p>
+</div>
+<div class="group bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[32px] mb-6 block">military_tech</span>
+<h3 class="font-title-lg text-title-lg mb-2">Leadership</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Accelerators for young changemakers and activists.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Carousel -->
+<section class="py-24 bg-surface-navy text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-12">
+<div class="flex flex-col gap-4">
+<h2 class="font-headline-lg text-headline-lg text-white">Elite Opportunities</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim">Closing soon. Handpicked for maximum career growth.</p>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full border border-outline-variant/20 flex items-center justify-center hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/20 flex items-center justify-center hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 no-scrollbar">
+<!-- Modern Carousel Cards -->
+<div class="min-w-[320px] bg-white text-text-primary rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+<div class="h-48 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A cinematic view of the iconic Harvard University campus buildings at dusk with soft warm lights illuminating the brickwork and autumn trees around the yard. The sky is a deep twilight blue, creating a high-contrast and elite academic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfooVpuYfW2XLpZYZqmjSFJIJYRRYJCLXdzRaXnmicqtWSVCjTc2708x896wKHRI5oSTjMGhMlp4KnLooQDk5UtMKe_D3eDQFElkzt5xBDD9owoGTVJZcfdn7RT_x_7xRwRVTb2XYGVfSeWmACOXi7k9Gn0R7_z2e7Wbgh7mwv7AMOHd6krF_qjN_pnGjpcmboaC2v0j4AQyZxx8HMeWXhHb-50RUsADrJPyoC6rC8jbCwosnbsUr6_MfB69w1Cce2wMupUo5Ds_9e"/>
+<span class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-label-sm font-label-sm">Fellowship</span>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<h4 class="font-title-lg text-title-lg">Harvard Radcliffe Fellowship</h4>
+<p class="text-body-sm text-text-secondary line-clamp-2">A chance for world-class researchers and artists to spend a year at Harvard University.</p>
+<div class="flex items-center gap-4 py-2 border-y border-outline-variant/10 text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">location_on</span> USA</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">payments</span> $78k Stipend</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-label-md hover:bg-primary/5 transition-all">View Details</button>
+</div>
+</div>
+<div class="min-w-[320px] bg-white text-text-primary rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+<div class="h-48 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A modern tech office environment featuring glass walls and vibrant green plants, with a focus on a collaborative workspace where students are working on laptops. The lighting is bright and airy, reflecting a professional yet innovative global tech company aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRezTaTvslnPU_zGkmgLOkypZ_nXvuP-kD58988AL5bKzeMm6xCDACofK9DxyPFIPCspdcSH-SDqSkfg7a58DA6hyuTFLG2BlRc7aYwatXCgu9ikYw59uj16mJXySWeSwqxdnoAVaKWXbCrqqofKM5x7P2J9WLYAR8A4G0SuoljcvMOsxhckGF0kkE-DF83lr3txSVFCbpgUjzwt2EuY6KiqB3THttEoXZEH0z2EJfkppepnZCdCOzYCBv0Dgig83FrQ5AehKU8VZf"/>
+<span class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-label-sm font-label-sm">Internship</span>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<h4 class="font-title-lg text-title-lg">Google STEP Internship</h4>
+<p class="text-body-sm text-text-secondary line-clamp-2">A developmental internship for first and second-year undergraduate students with a passion for CS.</p>
+<div class="flex items-center gap-4 py-2 border-y border-outline-variant/10 text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">location_on</span> Global</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">payments</span> Paid</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-label-md hover:bg-primary/5 transition-all">View Details</button>
+</div>
+</div>
+<div class="min-w-[320px] bg-white text-text-primary rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+<div class="h-48 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A wide-angle landscape shot of the historic city of Bonn in Germany during sunrise, showing the Rhine river and elegant traditional architecture. The mood is peaceful and intellectual, embodying the prestigious Fulbright scholarship experience in Europe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAJCI3TluQipfTOZzMnQY2SoK9hYIKrqL74O5GIw1rX0TPW-0UeaAN1m1veBuVpb--OF9ZisFc64u02HFAtqBnEW7yuzbct6kJJXNWHY0mRmt-ETxkW0gl2SX0EJ4PCvIDDyltrIEz-zluK5PTRX1fgsJxQTU47wXJzv4oXRSndkhdZVdmofVoszUUTLNfg7dtst1KFIrSTdT2lxiegn-xaDLbYHdliTrBU8GmRkp17wWmlvm-0IbRWN0AxMo5qpcFAZWMKO69gPy-"/>
+<span class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-label-sm font-label-sm">Scholarship</span>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<h4 class="font-title-lg text-title-lg">Fulbright Global Scholar</h4>
+<p class="text-body-sm text-text-secondary line-clamp-2">The flagship international educational exchange program sponsored by the U.S. government.</p>
+<div class="flex items-center gap-4 py-2 border-y border-outline-variant/10 text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">location_on</span> Germany</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">payments</span> Full Coverage</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-label-md hover:bg-primary/5 transition-all">View Details</button>
+</div>
+</div>
+<div class="min-w-[320px] bg-white text-text-primary rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+<div class="h-48 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A high-tech research laboratory setting with bright LED lighting and stainless steel equipment, where a young researcher is focused on a microscope. The aesthetic is clean, professional, and forward-thinking, capturing the essence of a Mitacs research internship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYjvlcnKbkjoyYQrcG-UUwuNMZ-C5zAbURSo7JNvWflelJ5ecjZYOghaOsEdABBwrc1P2wijhoBpnnlkgdRQTpbm_lOZ7qMnIg8_7SGtX-PzMO_oYSGJ6LC_4Uywa65GWXp5XQP3OUQBt962k1HLp6y3PlWxejxFutllIm8Ttb0w8ryuN_7Sru1yCF8QAhPh1SQGNKNRR3TXqYgQnsKyhPWLgerAZQTjBaeYuXBfZFqH94Kwx2aUGnYtaAiUmn6cz2Hf8Vm4zgL2tR"/>
+<span class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-label-sm font-label-sm">Research</span>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<h4 class="font-title-lg text-title-lg">MITACS Globalink</h4>
+<p class="text-body-sm text-text-secondary line-clamp-2">A 12-week research internship at Canadian universities for international undergrads.</p>
+<div class="flex items-center gap-4 py-2 border-y border-outline-variant/10 text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">location_on</span> Canada</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">payments</span> Fully Funded</span>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary text-primary font-label-md hover:bg-primary/5 transition-all">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How We Help -->
+<section class="py-24">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Your Journey to Success</h2>
+<p class="font-body-lg text-body-lg text-text-secondary">We guide you through every milestone of the application lifecycle.</p>
+</div>
+<div class="relative">
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-outline-variant/30 -translate-y-1/2"></div>
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-12 relative z-10">
+<div class="flex flex-col items-center text-center gap-6">
+<div class="w-16 h-16 rounded-full bg-white border-4 border-primary flex items-center justify-center text-primary font-bold shadow-xl">1</div>
+<h3 class="font-title-lg text-title-lg">Discover</h3>
+<p class="text-body-sm text-text-secondary">Personalized opportunity feeds based on your background and goals.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-6">
+<div class="w-16 h-16 rounded-full bg-white border-4 border-primary flex items-center justify-center text-primary font-bold shadow-xl">2</div>
+<h3 class="font-title-lg text-title-lg">Learn</h3>
+<p class="text-body-sm text-text-secondary">Step-by-step masterclasses on crafting winning CVs and SOPs.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-6">
+<div class="w-16 h-16 rounded-full bg-white border-4 border-primary flex items-center justify-center text-primary font-bold shadow-xl">3</div>
+<h3 class="font-title-lg text-title-lg">Join</h3>
+<p class="text-body-sm text-text-secondary">Get exclusive insights from our global community of past winners.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-6">
+<div class="w-16 h-16 rounded-full bg-white border-4 border-primary flex items-center justify-center text-primary font-bold shadow-xl">4</div>
+<h3 class="font-title-lg text-title-lg">Achieve</h3>
+<p class="text-body-sm text-text-secondary">Fly out to your dream destination with full financial security.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Stories (Netflix Style) -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg mb-12">Success Stories</h2>
+<div class="flex gap-6 overflow-x-auto pb-12 no-scrollbar">
+<div class="min-w-[400px] aspect-video rounded-2xl overflow-hidden relative group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional video testimonial setup with a diverse group of smiling students in a modern glass office. The lighting is bright and warm, with a high-end editorial feel that conveys authenticity and success in their academic journeys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlu_2NYjuuGragTjFocbvNQQi_R-NYfchzUW6NzOpwj5tA0_6XJLHp4cq2JPTjhkBtVfjJwYaRRwt3qZNgDGpVkB_0QfTxnST292I24X_GN4VVU29RlJRPsomYg93YqOrp1GqFuXTnETKOCpalDsTypoJCgQuuff9i-s2MqIqVZdSmDbPttQxom4sJZAEipTe_rGu8KeDCt88-E0fP-ajhHNUqemryGdlsM5ETDO318fRNYXadEns8JhoNl0ifxUK5vK5M_irFTJRM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+<span class="material-symbols-outlined text-white text-[48px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">play_circle</span>
+<h4 class="text-white font-title-lg">How I got into Oxford: Rhodes 2023</h4>
+<p class="text-white/70 text-body-sm">Aisha M. • Fully Funded Scholar</p>
+</div>
+</div>
+<div class="min-w-[400px] aspect-video rounded-2xl overflow-hidden relative group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A group of young diverse professionals sitting around a sleek conference table with laptops, laughing and discussing projects. The room is flooded with natural sunlight from large windows, creating a vibrant, successful, and elite collaborative atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKkcmVZ14-6VAvGtYHBbNxxb9nWNCqxmj4piFZS4bx7Ol2eIQmSYV_FJ27Ba7zayIk6jrd_lelPEqTpsC0jcuj-bcKGOArz_Fdp_mk8zKXia8Y16mEjRhcjQkoKIm3xWcHvAcyG7aDzsJqOsPvcQ78oIl-9uB2hQDNZfK9nJc9RgETp9Tv31E1mL7xDKgzLJJTnPEHIfGeCuNuKRsRluRljlA4RL7QMWE-jo1m48rwzQXq63zOGW2AjNc3imxuAOx-iRoKIhPye87O"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+<span class="material-symbols-outlined text-white text-[48px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">play_circle</span>
+<h4 class="text-white font-title-lg">Interning at Google HQ in Zurich</h4>
+<p class="text-white/70 text-body-sm">Daniel K. • STEP Intern</p>
+</div>
+</div>
+<div class="min-w-[400px] aspect-video rounded-2xl overflow-hidden relative group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A focused close-up of a student working in a high-tech lab with blue ambient lighting and advanced scientific equipment. The image is crisp and professional, symbolizing the prestigious nature of global research fellowships and career achievement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqBkbVvumiGqRZMKmJsB8sS8I3l0COy4-VIdBCGQ4HotQKwr4dLWdeHufbOtXD_hSyGWYKJpuzLBve6YWfEz89Z3bGwRJRX6a5irJN5RXwubg0KsgnhUY_cnN3zMWI0K5ZLnHacpc47w4AoHo8jdcTTsgzHfP6Te3Pz8xUQS4qrxsQ_Qt8grChvymt6xepL9IUrFGv9WhuBPBrYNmEh0V_IFszs-__xgg4ZLR1WqRw4sE7TPT6BXsmuLvIpwcvN-fVzktmJdhO_lnr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+<span class="material-symbols-outlined text-white text-[48px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">play_circle</span>
+<h4 class="text-white font-title-lg">Breaking into Research at MIT</h4>
+<p class="text-white/70 text-body-sm">Elena R. • MITACS Fellow</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Resources Section -->
+<section class="py-24">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div class="flex flex-col gap-4">
+<h2 class="font-headline-lg text-headline-lg">Expert Guides</h2>
+<p class="font-body-lg text-body-lg text-text-secondary">Comprehensive toolkits to perfect your application.</p>
+</div>
+<button class="text-primary font-label-md flex items-center gap-2 group">
+                        Browse all resources <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container p-8 rounded-2xl flex flex-col gap-6 hover:bg-surface-container-high transition-colors group">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">description</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg mb-2">Winning CV Builder</h4>
+<p class="text-body-sm text-text-secondary mb-6">Learn the exact format that gets past ATS and impresses recruiters at top organizations.</p>
+<a class="text-label-md font-bold text-primary group-hover:underline" href="#">Download Template</a>
+</div>
+</div>
+<div class="bg-surface-container p-8 rounded-2xl flex flex-col gap-6 hover:bg-surface-container-high transition-colors group">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">history_edu</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg mb-2">SOP Masterclass</h4>
+<p class="text-body-sm text-text-secondary mb-6">A deep dive into narrative-building for Statement of Purpose and Personal Statements.</p>
+<a class="text-label-md font-bold text-primary group-hover:underline" href="#">Watch Course</a>
+</div>
+</div>
+<div class="bg-surface-container p-8 rounded-2xl flex flex-col gap-6 hover:bg-surface-container-high transition-colors group">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">forum</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg mb-2">Interview Prep</h4>
+<p class="text-body-sm text-text-secondary mb-6">Mock interview questions and strategy for Rhodes, Fulbright, and Tech interviews.</p>
+<a class="text-label-md font-bold text-primary group-hover:underline" href="#">Read Guide</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Section -->
+<section class="py-24 bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col gap-8">
+<h2 class="font-display-lg text-display-lg text-white">Join the Elite Student Network</h2>
+<p class="text-body-lg text-on-primary/80">Don't navigate your future alone. Join 80k+ students getting real-time updates and peer support directly on WhatsApp.</p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg">done_all</span>
+<p class="text-label-md">Instant Opportunity Alerts</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg">done_all</span>
+<p class="text-label-md">Direct access to mentors and alumni</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg">done_all</span>
+<p class="text-label-md">Exclusive application resources</p>
+</div>
+</div>
+<button class="w-fit bg-white text-primary px-10 py-4 rounded-xl font-label-md text-label-md hover:bg-surface-container transition-all">
+                        Join WhatsApp Channel Now
+                    </button>
+</div>
+<div class="relative rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-full object-cover" data-alt="A large-scale image of a vibrant student meetup featuring diverse young adults laughing and networking in a professional modern co-working space. The scene is full of energy, with bright natural lighting and a high-end premium aesthetic representing a global community." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpzJSWwSzR0XoKw1bs3XhQcbGUa0fLUwM1ItA8BHRf0CYI9RCTTutLlcsZW0uiHH47jYkTdPB0byOvt5-wbg24tUOapgAn3NtOHloii3_FfiYT7GHjmn1oVhVFKIIxYGybc71GXm-blrF9naogwn1t65EiZWjYUYiRSR709kY4X_tE3sgrTxq8HKDDSJwkuMBcZDvFa6qyWOGU5ZbuRte1k7rsiKK_9c_FecXNePW87ZLc5rsVxF4AVxyWLRQAoh835aEmU4--cdxZ"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px]"></div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 bg-white text-center">
+<div class="max-w-3xl mx-auto px-margin-desktop flex flex-col items-center gap-8">
+<h2 class="font-display-lg text-display-lg text-text-primary">Your Next Opportunity Is Waiting</h2>
+<p class="text-body-lg text-text-secondary">Stop searching through infinite tabs. Start receiving world-class opportunities curated specifically for your ambition.</p>
+<div class="flex flex-wrap justify-center gap-6">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-label-md text-label-md shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+                        Explore Opportunities
+                    </button>
+<button class="bg-surface border border-outline/20 text-text-primary px-10 py-4 rounded-xl font-label-md text-label-md hover:bg-surface-container transition-all">
+                        Contact an Expert
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-navy border-t border-surface-container dark:border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-unit">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-title-lg font-title-lg font-bold text-text-primary dark:text-on-primary">EliteOps</span>
+<p class="font-body-sm text-body-sm text-text-secondary dark:text-secondary-fixed-dim">© 2024 EliteOps. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-body-sm text-body-sm text-text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Cookie Policy</a>
+<a class="font-body-sm text-body-sm text-text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-primary/5 transition-all" href="#"><span class="material-symbols-outlined text-text-secondary">language</span></a>
+<a class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-primary/5 transition-all" href="#"><span class="material-symbols-outlined text-text-secondary">share</span></a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Basic Reveal On Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
