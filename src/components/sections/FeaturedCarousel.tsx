@@ -101,14 +101,14 @@ export function FeaturedCarousel() {
 
   return (
     <section className="py-12 lg:py-16 bg-surface-navy dark:bg-surface-dim text-white overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <AnimatedSection>
           <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-4 mb-6 lg:mb-8">
             <div>
-              <h2 className="font-[family-name:var(--font-sora)] text-2xl sm:text-[30px] font-semibold leading-tight text-white">
+              <h2 className="font-(family-name:--font-sora) text-2xl sm:text-[30px] font-semibold leading-tight text-white">
                 Elite Opportunities
               </h2>
-              <p className="font-[family-name:var(--font-dm-sans)] text-sm sm:text-base text-white/50 mt-1.5">
+              <p className="font-(family-name:--font-dm-sans) text-sm sm:text-base text-white/50 mt-1.5">
                 Closing soon. Handpicked for maximum career growth.
               </p>
             </div>
@@ -142,7 +142,7 @@ export function FeaturedCarousel() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.08, ease: "easeOut" }}
-              className="min-w-[280px] sm:min-w-[320px] bg-surface-container-lowest dark:bg-surface-container text-text-primary rounded-xl overflow-hidden shadow-md flex flex-col snap-start hover:shadow-xl transition-shadow duration-300"
+              className="min-w-70 sm:min-w-[320px] bg-surface-container-lowest dark:bg-surface-container text-text-primary rounded-xl overflow-hidden shadow-md flex flex-col snap-start hover:shadow-xl transition-shadow duration-300"
             >
               {/* Image */}
               <div className="h-40 sm:h-44 bg-surface-container relative overflow-hidden">
@@ -152,23 +152,23 @@ export function FeaturedCarousel() {
                   alt={opp.title}
                   loading="lazy"
                 />
-                <span className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm text-white px-2.5 py-0.5 rounded-md text-[10px] font-bold font-[family-name:var(--font-dm-sans)] tracking-wide uppercase">
+                <span className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm text-white px-2.5 py-0.5 rounded-md text-[10px] font-bold font-(family-name:--font-dm-sans) tracking-wide uppercase">
                   {opp.badge}
                 </span>
               </div>
 
               {/* Content */}
               <div className="p-4 flex flex-col gap-2.5 flex-1">
-                <h4 className="font-[family-name:var(--font-sora)] text-[17px] font-semibold leading-snug">
+                <h4 className="font-(family-name:--font-sora) text-[17px] font-semibold leading-snug">
                   {opp.title}
                 </h4>
                 
-                <p className="text-sm text-text-secondary line-clamp-2 font-[family-name:var(--font-dm-sans)] leading-relaxed">
+                <p className="text-sm text-text-secondary line-clamp-2 font-(family-name:--font-dm-sans) leading-relaxed">
                   {opp.description}
                 </p>
 
                 {/* Minimal Meta Info */}
-                <div className="flex items-center gap-3 text-xs text-text-tertiary font-[family-name:var(--font-dm-sans)] mt-auto pt-2">
+                <div className="flex items-center gap-3 text-xs text-text-tertiary font-(family-name:--font-dm-sans) mt-auto pt-2">
                   <span className="flex items-center gap-1">
                     <MapPin size={13} className="opacity-70" />
                     {opp.location}
@@ -181,7 +181,7 @@ export function FeaturedCarousel() {
                 </div>
 
                 {/* Minimal Ghost Button */}
-                <button className="w-full py-2 mt-1 rounded-lg bg-white/5 text-white text-sm font-medium font-[family-name:var(--font-dm-sans)] hover:bg-white/10 transition-colors duration-200">
+                <button className="w-full py-2 mt-1 rounded-lg bg-white/5 text-white text-sm font-medium font-(family-name:--font-dm-sans) hover:bg-white/10 transition-colors duration-200">
                   View Details
                 </button>
               </div>

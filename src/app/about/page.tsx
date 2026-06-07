@@ -1,9 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  ArrowLeft,
   GraduationCap,
   Globe,
   Briefcase,
@@ -15,9 +13,8 @@ import {
   Users,
   Rocket,
   CheckCircle2,
-  ArrowRight,
 } from "lucide-react";
-import { AnimatedSection, StaggerChildren, CountUp } from "@/components/use-scroll-animation";
+import { AnimatedSection, StaggerChildren } from "@/components/use-scroll-animation";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 
@@ -95,13 +92,13 @@ function MissionSection() {
           {/* Left - Mission statement */}
           <AnimatedSection direction="left">
             <div className="space-y-6">
-              <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[40px] font-bold leading-tight text-text-primary">
+              <h2 className="font-(family-name:--font-sora) text-3xl sm:text-[40px] font-bold leading-tight text-text-primary">
                 Our mission is simple:
               </h2>
-              <p className="font-[family-name:var(--font-dm-sans)] text-xl sm:text-2xl text-primary dark:text-primary-fixed font-medium leading-relaxed">
+              <p className="font-(family-name:--font-dm-sans) text-xl sm:text-2xl text-primary dark:text-primary-fixed font-medium leading-relaxed">
                 No student should miss an opportunity because of lack of awareness.
               </p>
-              <p className="font-[family-name:var(--font-dm-sans)] text-base text-text-secondary leading-relaxed">
+              <p className="font-(family-name:--font-dm-sans) text-base text-text-secondary leading-relaxed">
                 We bridge the gap between students and life-changing global opportunities, empowering every young person—regardless of their background—with equal access to shape their futures.
               </p>
             </div>
@@ -110,7 +107,7 @@ function MissionSection() {
           {/* Right - Info card */}
           <AnimatedSection direction="right">
             <div className="bg-surface-container-lowest dark:bg-surface-container rounded-2xl p-8 lg:p-10 border border-outline-variant/15 shadow-lg">
-              <h3 className="font-[family-name:var(--font-sora)] text-lg font-semibold text-text-primary mb-6">
+              <h3 className="font-(family-name:--font-sora) text-lg font-semibold text-text-primary mb-6">
                 What we curate for students
               </h3>
               <div className="space-y-4">
@@ -123,9 +120,9 @@ function MissionSection() {
                     transition={{ delay: i * 0.08, duration: 0.4 }}
                     className="flex items-center gap-4"
                   >
-                    <div className="w-2 h-2 rounded-full bg-primary dark:bg-primary-fixed flex-shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-primary dark:bg-primary-fixed shrink-0" />
                     <div className="flex-1 h-px bg-outline-variant/20 dark:bg-outline-variant/15" />
-                    <span className="font-[family-name:var(--font-dm-sans)] text-base font-medium text-text-primary">
+                    <span className="font-(family-name:--font-dm-sans) text-base font-medium text-text-primary">
                       {type}
                     </span>
                   </motion.div>
@@ -164,13 +161,13 @@ function ProblemSection() {
 
   return (
     <section className="py-14 lg:py-20 bg-surface-navy dark:bg-surface-dim text-white">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <AnimatedSection>
           <div className="text-center mb-10 lg:mb-14">
-            <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[40px] font-bold leading-tight text-white mb-4">
+            <h2 className="font-(family-name:--font-sora) text-3xl sm:text-[40px] font-bold leading-tight text-white mb-4">
               The Opportunity Gap Is Real
             </h2>
-            <p className="font-[family-name:var(--font-dm-sans)] text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
+            <p className="font-(family-name:--font-dm-sans) text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
               Millions of talented youth lack access to internships, scholarships, and global opportunities—resulting in lost potential and inequality.
             </p>
           </div>
@@ -194,10 +191,10 @@ function ProblemSection() {
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-5">
                   <Icon className="text-primary-fixed" size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-[family-name:var(--font-sora)] text-xl font-semibold text-white mb-3">
+                <h3 className="font-(family-name:--font-sora) text-xl font-semibold text-white mb-3">
                   {problem.title}
                 </h3>
-                <p className="font-[family-name:var(--font-dm-sans)] text-sm text-white/60 leading-relaxed">
+                <p className="font-(family-name:--font-dm-sans) text-sm text-white/60 leading-relaxed">
                   {problem.description}
                 </p>
               </motion.div>
@@ -285,10 +282,10 @@ function WhatWeDoSection() {
                     strokeWidth={1.5}
                   />
                 </div>
-                <h3 className="font-[family-name:var(--font-sora)] text-lg font-semibold text-text-primary mb-1.5">
+                <h3 className="font-(family-name:--font-sora) text-lg font-semibold text-text-primary mb-1.5">
                   {item.title}
                 </h3>
-                <p className="font-[family-name:var(--font-dm-sans)] text-sm text-text-secondary leading-relaxed">
+                <p className="font-(family-name:--font-dm-sans) text-sm text-text-secondary leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>
@@ -331,13 +328,13 @@ function HowWeHelpSection() {
 
   return (
     <section className="py-14 lg:py-20">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <AnimatedSection>
           <div className="text-center mb-10 lg:mb-14">
-            <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[40px] font-bold leading-tight text-text-primary mb-4">
+            <h2 className="font-(family-name:--font-sora) text-3xl sm:text-[40px] font-bold leading-tight text-text-primary mb-4">
               How We Help
             </h2>
-            <p className="font-[family-name:var(--font-dm-sans)] text-base sm:text-lg text-text-secondary max-w-2xl mx-auto">
+            <p className="font-(family-name:--font-dm-sans) text-base sm:text-lg text-text-secondary max-w-2xl mx-auto">
               A simple four-step path from discovery to achievement.
             </p>
           </div>
@@ -372,10 +369,10 @@ function HowWeHelpSection() {
                       {step.number}
                     </span>
                   </motion.div>
-                  <h3 className="font-[family-name:var(--font-sora)] text-lg font-semibold text-text-primary">
+                  <h3 className="font-(family-name:--font-sora) text-lg font-semibold text-text-primary">
                     {step.title}
                   </h3>
-                  <p className="text-sm text-text-secondary font-[family-name:var(--font-dm-sans)] leading-relaxed max-w-[200px]">
+                  <p className="text-sm text-text-secondary font-(family-name:--font-dm-sans) leading-relaxed max-w-[200px]">
                     {step.description}
                   </p>
                 </motion.div>
@@ -399,21 +396,21 @@ function CommunitySection() {
 
   return (
     <section className="py-14 lg:py-20 bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <AnimatedSection direction="left">
             <div className="space-y-6">
-              <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[40px] font-bold leading-tight text-white dark:text-on-primary-container">
+              <h2 className="font-(family-name:--font-sora) text-3xl sm:text-[40px] font-bold leading-tight text-white dark:text-on-primary-container">
                 Built Around Students
               </h2>
-              <p className="font-[family-name:var(--font-dm-sans)] text-base sm:text-lg text-white/80 dark:text-on-primary-container/70 leading-relaxed">
+              <p className="font-(family-name:--font-dm-sans) text-base sm:text-lg text-white/80 dark:text-on-primary-container/70 leading-relaxed">
                 Opportunities Platform is more than a directory. It&apos;s a growing community of students sharing opportunities, resources, experiences, and success stories.
               </p>
               <div className="space-y-3">
                 {features.map((feature) => (
                   <div key={feature} className="flex items-center gap-3">
                     <CheckCircle2 size={18} className="text-white/70 dark:text-on-primary-container/50 flex-shrink-0" />
-                    <p className="font-[family-name:var(--font-dm-sans)] text-sm font-medium">
+                    <p className="font-(family-name:--font-dm-sans) text-sm font-medium">
                       {feature}
                     </p>
                   </div>

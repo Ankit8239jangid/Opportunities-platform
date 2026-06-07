@@ -100,7 +100,7 @@ export function SuccessStories() {
       {/* Video Modal (Pure Tailwind Transitions) */}
       <div
         onClick={() => setActiveVideo(null)}
-        className={`fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 md:p-10 bg-black/90 backdrop-blur-sm transition-all duration-300 ${
+        className={`fixed inset-0 z-100 flex items-center justify-center p-4 sm:p-6 md:p-10 bg-black/90 backdrop-blur-sm transition-all duration-300 ${
           activeVideo ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
@@ -125,7 +125,7 @@ export function SuccessStories() {
                 className="absolute top-0 left-0 w-full h-full"
                 src={`https://www.youtube-nocookie.com/embed/${activeVideo.videoId}?autoplay=1&rel=0`}
                 title={activeVideo.title}
-                frameBorder="0"
+               
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />

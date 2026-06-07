@@ -14,13 +14,13 @@ const benefits = [
 export function CommunitySection() {
   return (
     <section className="py-14 lg:py-20 bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container" id="community">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <AnimatedSection direction="left">
           <div className="flex flex-col gap-6">
-            <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[40px] lg:text-[48px] font-bold leading-tight text-white dark:text-on-primary-container">
+            <h2 className="font-(family-name:--font-sora) text-3xl sm:text-[40px] lg:text-[48px] font-bold leading-tight text-white dark:text-on-primary-container">
               Join the Elite Student Network
             </h2>
-            <p className="font-[family-name:var(--font-dm-sans)] text-base sm:text-lg text-white/80 dark:text-on-primary-container/70 leading-relaxed">
+            <p className="font-(family-name:--font-dm-sans) text-base sm:text-lg text-white/80 dark:text-on-primary-container/70 leading-relaxed">
               Don&apos;t navigate your future alone. Join 80k+ students getting
               real-time updates and peer support directly on WhatsApp.
             </p>
