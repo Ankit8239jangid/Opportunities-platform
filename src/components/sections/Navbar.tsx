@@ -3,6 +3,7 @@
 import { useState, useEffect, useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { Menu, X, Sun, Moon } from "lucide-react";
 
 const emptySubscribe = () => () => {};
@@ -19,6 +20,7 @@ const navLinks = [
   { label: "Success Stories", href: "#stories" },
   { label: "Resources", href: "#resources" },
   { label: "Community", href: "#community" },
+  { label: "About", href: "/about", isRoute: true },
 ];
 
 export function Navbar() {
@@ -60,26 +62,33 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className={`font-[family-name:var(--font-dm-sans)] text-sm font-medium relative transition-colors duration-200 ${
-                link.active
-                  ? "text-primary"
-                  : "text-text-secondary hover:text-primary"
-              }`}
-            >
-              {link.label}
-              {link.active && (
-                <motion.span
-                  layoutId="nav-dot"
-                  className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full"
-                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                />
-              )}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const isRoute = 'isRoute' in link && link.isRoute;
+            const LinkTag = isRoute ? Link : 'a';
+            const linkProps = isRoute
+              ? { href: link.href }
+              : { href: link.href };
+            return (
+              <LinkTag
+                key={link.label}
+                {...linkProps}
+                className={`font-[family-name:var(--font-dm-sans)] text-sm font-medium relative transition-colors duration-200 ${
+                  link.active
+                    ? "text-primary"
+                    : "text-text-secondary hover:text-primary"
+                }`}
+              >
+                {link.label}
+                {link.active && (
+                  <motion.span
+                    layoutId="nav-dot"
+                    className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </LinkTag>
+            );
+          })}
         </div>
 
         {/* Right side: Theme Toggle + CTA */}
@@ -145,18 +154,25 @@ export function Navbar() {
             className={`md:hidden ${isDark ? "glass-header-dark" : "glass-header-light"} border-b border-border/40 overflow-hidden`}
           >
             <div className="px-4 sm:px-6 py-4 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className={`font-[family-name:var(--font-dm-sans)] text-sm font-medium py-2 ${
-                    link.active ? "text-primary" : "text-text-secondary"
-                  }`}
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) => {
+                const isRoute = 'isRoute' in link && link.isRoute;
+                const LinkTag = isRoute ? Link : 'a';
+                const linkProps = isRoute
+                  ? { href: link.href }
+                  : { href: link.href };
+                return (
+                  <LinkTag
+                    key={link.label}
+                    {...linkProps}
+                    className={`font-[family-name:var(--font-dm-sans)] text-sm font-medium py-2 ${
+                      link.active ? "text-primary" : "text-text-secondary"
+                    }`}
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.label}
+                  </LinkTag>
+                );
+              })}
               <button className="bg-primary text-on-primary px-6 py-2.5 rounded-full text-sm font-medium w-full">
                 Join WhatsApp Channel
               </button>
