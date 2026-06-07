@@ -19,20 +19,20 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "EliteOps | Discover World-Class Opportunities",
+  title: "Opportunities-platform. | Discover World-Class Opportunities",
   description:
     "Access a curated ecosystem of world-class scholarships, elite internships, and global fellowships designed for the ambitious student.",
   keywords: [
-    "EliteOps",
+    "Opportunities-platform.",
     "scholarships",
     "internships",
     "fellowships",
     "opportunities",
     "students",
   ],
-  authors: [{ name: "EliteOps" }],
+  authors: [{ name: "Opportunities-platform." }],
   openGraph: {
-    title: "EliteOps | Discover World-Class Opportunities",
+    title: "Opportunities-platform. | Discover World-Class Opportunities",
     description:
       "Access a curated ecosystem of world-class scholarships, elite internships, and global fellowships.",
     type: "website",

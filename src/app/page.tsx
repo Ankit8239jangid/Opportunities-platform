@@ -7,14 +7,14 @@ import { CategoriesSection } from "@/components/sections/CategoriesSection";
 import { FeaturedCarousel } from "@/components/sections/FeaturedCarousel";
 import { JourneySection } from "@/components/sections/JourneySection";
 import { SuccessStories } from "@/components/sections/SuccessStories";
-import { ResourcesSection } from "@/components/sections/ResourcesSection";
+// import { ResourcesSection } from "@/components/sections/ResourcesSection";
 import { CommunitySection } from "@/components/sections/CommunitySection";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col max-w-7xl mx-auto">
       <Navbar />
       <main className="flex-1 pt-16">
         <HeroSection />
@@ -23,7 +23,7 @@ export default function Home() {
         <FeaturedCarousel />
         <JourneySection />
         <SuccessStories />
-        <ResourcesSection />
+        {/* <ResourcesSection /> */}
         <CommunitySection />
         <FinalCTA />
       </main>
