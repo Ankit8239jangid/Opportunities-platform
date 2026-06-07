@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCheck } from "lucide-react";
 import { AnimatedSection } from "@/components/use-scroll-animation";
+import Link from "next/link";
 
 const benefits = [
   "Instant Opportunity Alerts",
@@ -29,22 +30,24 @@ export function CommunitySection() {
                   <span className="bg-white/20 dark:bg-on-primary-container/10 p-2 rounded-lg">
                     <CheckCheck size={16} />
                   </span>
-                  <p className="font-[family-name:var(--font-dm-sans)] text-sm font-medium">
+                  <p className="font-(family-name:--font-dm-sans) text-sm font-medium">
                     {benefit}
                   </p>
                 </div>
               ))}
             </div>
-            <button className="w-fit bg-white dark:bg-on-primary-container text-primary dark:text-primary-container px-8 py-3.5 rounded-xl font-[family-name:var(--font-dm-sans)] text-sm font-medium hover:bg-white/90 dark:hover:bg-on-primary-container/90 transition-all duration-200 mt-1">
+            <Link
+              href="https://whatsapp.com/channel/0029VbCypEvEVccMnoRyfL0P"
+              className="w-fit bg-white dark:bg-on-primary-container text-primary dark:text-primary-container px-8 py-3.5 rounded-xl font-(family-name:--font-dm-sans) text-sm font-medium hover:bg-white/90 dark:hover:bg-on-primary-container/90 transition-all duration-200 mt-1">
               Join WhatsApp Channel Now
-            </button>
+            </Link>
           </div>
         </AnimatedSection>
 
         <AnimatedSection direction="right">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-700">
             <img
-              className="w-full h-full object-cover aspect-[4/3]"
+              className="w-full h-full object-cover aspect-4/3"
               src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop&q=80"
               alt="Student community networking"
             />

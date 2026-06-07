@@ -18,7 +18,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
-  
+
   const { theme, setTheme, resolvedTheme } = useTheme();
   const pathname = usePathname();
 
@@ -39,17 +39,16 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm"
-          : "bg-transparent border-b border-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
+        ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm"
+        : "bg-transparent border-b border-transparent"
+        }`}
     >
       <nav className="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 md:px-8 h-16">
-        
+
         {/* Logo Section */}
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="flex items-center gap-2.5 group transition-opacity hover:opacity-90"
         >
           <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
@@ -70,11 +69,10 @@ export function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`text-sm font-medium relative py-1 transition-colors duration-200 ${
-                  isActive
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`text-sm font-medium relative py-1 transition-colors duration-200 ${isActive
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 {link.label}
                 {isActive && (
@@ -91,7 +89,7 @@ export function Navbar() {
 
         {/* Right side: Theme Toggle + CTA */}
         <div className="flex items-center gap-3 md:gap-4">
-          
+
           {/* Theme Toggle */}
           {mounted ? (
             <button
@@ -130,9 +128,14 @@ export function Navbar() {
 
           {/* CTA Button (desktop) */}
           <div className="hidden md:block">
-            <button className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 active:scale-95 transition-all duration-200">
+            <Link
+              href="https://whatsapp.com/channel/0029VbCypEvEVccMnoRyfL0P"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 active:scale-95 transition-all duration-200"
+            >
               Join Channel
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -162,22 +165,26 @@ export function Navbar() {
                   <Link
                     key={link.label}
                     href={link.href}
-                    className={`text-base font-medium py-3 px-4 rounded-xl transition-colors ${
-                      isActive 
-                        ? "bg-primary/10 text-primary" 
-                        : "text-foreground hover:bg-muted"
-                    }`}
+                    className={`text-base font-medium py-3 px-4 rounded-xl transition-colors ${isActive
+                      ? "bg-primary/10 text-primary"
+                      : "text-foreground hover:bg-muted"
+                      }`}
                     onClick={() => setMobileOpen(false)}
                   >
                     {link.label}
                   </Link>
                 );
               })}
-              
+
               <div className="pt-4 mt-2 border-t border-border">
-                <button className="w-full bg-primary text-primary-foreground px-6 py-3.5 rounded-xl text-sm font-semibold active:scale-95 transition-all duration-200 shadow-sm">
+                <Link
+                  href="https://whatsapp.com/channel/0029VbCypEvEVccMnoRyfL0P"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 active:scale-95 transition-all duration-200"
+                >
                   Join WhatsApp Channel
-                </button>
+                </Link>
               </div>
             </div>
           </motion.div>

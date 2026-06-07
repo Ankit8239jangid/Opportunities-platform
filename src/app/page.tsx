@@ -9,7 +9,7 @@ import { JourneySection } from "@/components/sections/JourneySection";
 import { SuccessStories } from "@/components/sections/SuccessStories";
 // import { ResourcesSection } from "@/components/sections/ResourcesSection";
 import { CommunitySection } from "@/components/sections/CommunitySection";
-import { FinalCTA } from "@/components/sections/FinalCTA";
+
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
@@ -25,7 +25,6 @@ export default function Home() {
         <SuccessStories />
         {/* <ResourcesSection /> */}
         <CommunitySection />
-        <FinalCTA />
       </main>
       <Footer />
     </div>

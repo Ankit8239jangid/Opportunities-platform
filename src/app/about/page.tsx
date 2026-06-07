@@ -33,21 +33,7 @@ function AboutHero() {
       <div className="hero-glow bg-tertiary-fixed bottom-1/4 right-10" />
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 relative z-10 py-12 lg:py-0">
-        {/* Back link */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-8"
-        >
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm font-medium font-[family-name:var(--font-dm-sans)] text-text-secondary hover:text-primary transition-colors duration-200"
-          >
-            <ArrowLeft size={16} />
-            Back to Home
-          </Link>
-        </motion.div>
+
 
         <div className="max-w-3xl">
           {/* Eyebrow */}
@@ -103,9 +89,9 @@ function MissionSection() {
   ];
 
   return (
-    <section className="py-14 lg:py-20 bg-surface dark:bg-surface">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <section className=" bg-surface dark:bg-surface">
+      <div className="  px-4 sm:px-6 md:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left - Mission statement */}
           <AnimatedSection direction="left">
             <div className="space-y-6">
@@ -223,47 +209,6 @@ function ProblemSection() {
   );
 }
 
-/* ──────────── Our Impact ──────────── */
-function ImpactSection() {
-  const stats = [
-    { value: 80, suffix: "k+", label: "Students Reached" },
-    { value: 80, suffix: "+", label: "Countries Represented" },
-    { value: 500, suffix: "+", label: "Opportunities Shared" },
-    { value: 100, suffix: "+", label: "Scholarships Featured" },
-  ];
-
-  return (
-    <section className="py-14 lg:py-20 bg-surface dark:bg-surface">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
-        <AnimatedSection>
-          <div className="text-center mb-10 lg:mb-14">
-            <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[40px] font-bold leading-tight text-text-primary">
-              Our Impact
-            </h2>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
-            {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="text-center flex flex-col items-center gap-2 py-6"
-              >
-                <span className="font-[family-name:var(--font-sora)] text-5xl sm:text-6xl lg:text-7xl font-bold text-primary dark:text-primary-fixed leading-none">
-                  <CountUp end={stat.value} suffix={stat.suffix} duration={2.5} />
-                </span>
-                <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm font-medium text-text-secondary uppercase tracking-widest">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </AnimatedSection>
-      </div>
-    </section>
-  );
-}
 
 /* ──────────── What We Do ──────────── */
 function WhatWeDoSection() {
@@ -556,55 +501,22 @@ function VisionSection() {
   );
 }
 
-/* ──────────── Final CTA ──────────── */
-function AboutFinalCTA() {
-  return (
-    <section className="py-16 lg:py-24 bg-surface-container-lowest dark:bg-surface-container-low text-center">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 md:px-10 flex flex-col items-center gap-5">
-        <AnimatedSection>
-          <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[40px] lg:text-[48px] font-bold leading-tight text-text-primary">
-            Your Next Opportunity Could Be One Click Away
-          </h2>
-        </AnimatedSection>
-        <AnimatedSection delay={0.1}>
-          <p className="font-[family-name:var(--font-dm-sans)] text-base sm:text-lg text-text-secondary leading-relaxed max-w-xl">
-            Join thousands of students discovering scholarships, fellowships, internships, and global opportunities every day.
-          </p>
-        </AnimatedSection>
-        <AnimatedSection delay={0.2}>
-          <div className="flex flex-wrap justify-center gap-4 mt-2">
-            <Link
-              href="/"
-              className="bg-primary text-on-primary px-8 py-3.5 rounded-xl font-[family-name:var(--font-dm-sans)] text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 active:scale-95 transition-all duration-200 flex items-center gap-2"
-            >
-              Explore Opportunities
-              <ArrowRight size={16} />
-            </Link>
-            <button className="bg-surface-container-lowest dark:bg-surface-container border border-border text-text-primary px-8 py-3.5 rounded-xl font-[family-name:var(--font-dm-sans)] text-sm font-medium hover:bg-surface-container dark:hover:bg-surface-container-high transition-all duration-200">
-              Join WhatsApp Channel
-            </button>
-          </div>
-        </AnimatedSection>
-      </div>
-    </section>
-  );
-}
+
 
 /* ──────────── Main Page ──────────── */
 export default function AboutPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col mx-auto max-w-7xl">
       <Navbar />
       <main className="flex-1 pt-16">
         <AboutHero />
         <MissionSection />
         <ProblemSection />
-        <ImpactSection />
+   
         <WhatWeDoSection />
         <HowWeHelpSection />
         <CommunitySection />
         <VisionSection />
-        <AboutFinalCTA />
       </main>
       <Footer />
     </div>
