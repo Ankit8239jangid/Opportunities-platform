@@ -62,32 +62,32 @@ export function FeaturedCarousel() {
   };
 
   return (
-    <section className="py-20 lg:py-24 bg-surface-navy text-white">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-10">
+    <section className="py-14 lg:py-20 bg-surface-navy dark:bg-surface-dim text-white">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
         <AnimatedSection>
-          <div className="flex justify-between items-end mb-10 lg:mb-12">
-            <div className="flex flex-col gap-3">
+          <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-4 mb-8 lg:mb-10">
+            <div className="flex flex-col gap-2">
               <h2 className="font-[family-name:var(--font-sora)] text-2xl sm:text-[32px] font-semibold leading-tight text-white">
                 Elite Opportunities
               </h2>
-              <p className="font-[family-name:var(--font-dm-sans)] text-lg text-secondary-fixed-dim">
+              <p className="font-[family-name:var(--font-dm-sans)] text-base sm:text-lg text-white/60">
                 Closing soon. Handpicked for maximum career growth.
               </p>
             </div>
-            <div className="hidden sm:flex gap-2">
+            <div className="flex gap-2">
               <button
                 onClick={() => scroll("left")}
-                className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all duration-200"
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all duration-200"
                 aria-label="Scroll left"
               >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={18} />
               </button>
               <button
                 onClick={() => scroll("right")}
-                className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all duration-200"
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all duration-200"
                 aria-label="Scroll right"
               >
-                <ChevronRight size={20} />
+                <ChevronRight size={18} />
               </button>
             </div>
           </div>
@@ -95,7 +95,7 @@ export function FeaturedCarousel() {
 
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory"
+          className="flex gap-5 overflow-x-auto pb-6 hide-scrollbar snap-x snap-mandatory"
         >
           {opportunities.map((opp, index) => (
             <motion.div
@@ -104,26 +104,26 @@ export function FeaturedCarousel() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="min-w-[300px] sm:min-w-[320px] bg-white text-text-primary rounded-2xl overflow-hidden shadow-2xl flex flex-col card-lift snap-start"
+              className="min-w-[280px] sm:min-w-[320px] bg-surface-container-lowest dark:bg-surface-container text-text-primary rounded-2xl overflow-hidden shadow-2xl flex flex-col card-lift snap-start"
             >
-              <div className="h-48 bg-surface-container relative overflow-hidden">
+              <div className="h-44 sm:h-48 bg-surface-container relative overflow-hidden">
                 <img
                   className="w-full h-full object-cover"
                   src={opp.image}
                   alt={opp.title}
                 />
-                <span className="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-[11px] font-bold font-[family-name:var(--font-dm-sans)] tracking-wide">
+                <span className="absolute top-3 right-3 bg-tertiary dark:bg-tertiary-fixed text-on-tertiary dark:text-on-tertiary-fixed px-3 py-1 rounded-full text-[11px] font-bold font-[family-name:var(--font-dm-sans)] tracking-wide">
                   {opp.badge}
                 </span>
               </div>
-              <div className="p-5 lg:p-6 flex flex-col gap-4">
-                <h4 className="font-[family-name:var(--font-sora)] text-xl font-semibold">
+              <div className="p-4 sm:p-5 flex flex-col gap-3">
+                <h4 className="font-[family-name:var(--font-sora)] text-lg sm:text-xl font-semibold">
                   {opp.title}
                 </h4>
                 <p className="text-sm text-text-secondary line-clamp-2 font-[family-name:var(--font-dm-sans)]">
                   {opp.description}
                 </p>
-                <div className="flex items-center gap-4 py-2 border-y border-outline-variant/10 text-xs font-medium font-[family-name:var(--font-dm-sans)] text-text-secondary">
+                <div className="flex items-center gap-4 py-2 border-y border-outline-variant/10 dark:border-outline-variant/15 text-xs font-medium font-[family-name:var(--font-dm-sans)] text-text-secondary">
                   <span className="flex items-center gap-1">
                     <MapPin size={14} /> {opp.location}
                   </span>
@@ -131,7 +131,7 @@ export function FeaturedCarousel() {
                     <DollarSign size={14} /> {opp.funding}
                   </span>
                 </div>
-                <button className="w-full py-3 rounded-lg border border-primary text-primary text-sm font-medium font-[family-name:var(--font-dm-sans)] hover:bg-primary/5 transition-all duration-200">
+                <button className="w-full py-2.5 rounded-lg border border-primary text-primary dark:text-primary-fixed dark:border-primary-fixed text-sm font-medium font-[family-name:var(--font-dm-sans)] hover:bg-primary/5 dark:hover:bg-primary-fixed/5 transition-all duration-200">
                   View Details
                 </button>
               </div>

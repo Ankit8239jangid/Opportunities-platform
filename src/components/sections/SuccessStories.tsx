@@ -27,38 +27,34 @@ const stories = [
 
 export function SuccessStories() {
   return (
-    <section className="py-20 lg:py-24 bg-surface-container-low overflow-hidden" id="stories">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-10">
+    <section className="py-14 lg:py-20 bg-surface-container-low dark:bg-surface-container overflow-hidden" id="stories">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
         <AnimatedSection>
-          <h2 className="font-[family-name:var(--font-sora)] text-2xl sm:text-[32px] font-semibold leading-tight text-text-primary mb-10 lg:mb-12">
+          <h2 className="font-[family-name:var(--font-sora)] text-2xl sm:text-[32px] font-semibold leading-tight text-text-primary mb-8 lg:mb-10">
             Success Stories
           </h2>
         </AnimatedSection>
 
-        <div className="flex gap-6 overflow-x-auto pb-10 hide-scrollbar snap-x snap-mandatory">
+        <div className="flex gap-5 overflow-x-auto pb-6 hide-scrollbar snap-x snap-mandatory">
           {stories.map((story, index) => (
             <motion.div
               key={story.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="min-w-[300px] sm:min-w-[400px] aspect-video rounded-2xl overflow-hidden relative group cursor-pointer snap-start"
+              transition={{ duration: 0.5, delay: index * 0.12 }}
+              className="min-w-[280px] sm:min-w-[400px] aspect-video rounded-2xl overflow-hidden relative group cursor-pointer snap-start shadow-lg"
             >
               <img
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 src={story.image}
                 alt={story.title}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-5 lg:p-6">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileHover={{ opacity: 1, scale: 1 }}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                >
-                  <PlayCircle className="text-white" size={56} />
-                </motion.div>
-                <h4 className="text-white font-[family-name:var(--font-sora)] text-xl font-semibold">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4 sm:p-6">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <PlayCircle className="text-white drop-shadow-lg" size={52} />
+                </div>
+                <h4 className="text-white font-[family-name:var(--font-sora)] text-lg sm:text-xl font-semibold">
                   {story.title}
                 </h4>
                 <p className="text-white/70 text-sm font-[family-name:var(--font-dm-sans)]">

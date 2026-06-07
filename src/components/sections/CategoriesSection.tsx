@@ -58,14 +58,14 @@ const categories = [
 
 export function CategoriesSection() {
   return (
-    <section className="py-20 lg:py-24">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-10">
+    <section className="py-14 lg:py-20">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
         <AnimatedSection>
-          <div className="flex flex-col gap-4 mb-12 lg:mb-16 max-w-2xl">
+          <div className="flex flex-col gap-3 mb-10 lg:mb-14 max-w-2xl">
             <h2 className="font-[family-name:var(--font-sora)] text-2xl sm:text-[32px] font-semibold leading-tight tracking-tight text-text-primary">
               Curation by Domain
             </h2>
-            <p className="font-[family-name:var(--font-dm-sans)] text-lg leading-relaxed text-text-secondary">
+            <p className="font-[family-name:var(--font-dm-sans)] text-base sm:text-lg leading-relaxed text-text-secondary">
               We filter through thousands of global announcements to bring you
               only the most prestigious and high-impact programs.
             </p>
@@ -73,8 +73,8 @@ export function CategoriesSection() {
         </AnimatedSection>
 
         <StaggerChildren
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          staggerDelay={0.08}
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-5"
+          staggerDelay={0.06}
         >
           {categories.map((cat) => {
             const Icon = cat.icon;
@@ -87,14 +87,16 @@ export function CategoriesSection() {
                 }}
                 whileHover={{ y: -4, borderColor: "rgba(0, 107, 44, 0.5)" }}
                 transition={{ duration: 0.3 }}
-                className="group bg-surface-container-lowest p-6 lg:p-8 rounded-2xl border border-outline-variant/30 cursor-pointer"
+                className="group bg-surface-container-lowest dark:bg-surface-container p-5 lg:p-6 rounded-2xl border border-outline-variant/20 dark:border-outline-variant/15 cursor-pointer"
               >
-                <Icon
-                  className="text-primary mb-4 lg:mb-6"
-                  size={32}
-                  strokeWidth={1.5}
-                />
-                <h3 className="font-[family-name:var(--font-sora)] text-xl font-semibold mb-2 text-text-primary">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 dark:bg-primary/15 flex items-center justify-center mb-4">
+                  <Icon
+                    className="text-primary dark:text-primary-fixed"
+                    size={22}
+                    strokeWidth={1.5}
+                  />
+                </div>
+                <h3 className="font-[family-name:var(--font-sora)] text-lg font-semibold mb-1.5 text-text-primary">
                   {cat.title}
                 </h3>
                 <p className="font-[family-name:var(--font-dm-sans)] text-sm leading-relaxed text-text-secondary">

@@ -12,22 +12,22 @@ const benefits = [
 
 export function CommunitySection() {
   return (
-    <section className="py-20 lg:py-24 bg-primary text-on-primary" id="community">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <section className="py-14 lg:py-20 bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container" id="community">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <AnimatedSection direction="left">
-          <div className="flex flex-col gap-7">
-            <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[48px] font-bold leading-tight text-white">
+          <div className="flex flex-col gap-6">
+            <h2 className="font-[family-name:var(--font-sora)] text-3xl sm:text-[40px] lg:text-[48px] font-bold leading-tight text-white dark:text-on-primary-container">
               Join the Elite Student Network
             </h2>
-            <p className="font-[family-name:var(--font-dm-sans)] text-lg text-white/80 leading-relaxed">
+            <p className="font-[family-name:var(--font-dm-sans)] text-base sm:text-lg text-white/80 dark:text-on-primary-container/70 leading-relaxed">
               Don&apos;t navigate your future alone. Join 80k+ students getting
               real-time updates and peer support directly on WhatsApp.
             </p>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               {benefits.map((benefit) => (
-                <div key={benefit} className="flex items-center gap-4">
-                  <span className="bg-white/20 p-2 rounded-lg">
-                    <CheckCheck size={18} />
+                <div key={benefit} className="flex items-center gap-3">
+                  <span className="bg-white/20 dark:bg-on-primary-container/10 p-2 rounded-lg">
+                    <CheckCheck size={16} />
                   </span>
                   <p className="font-[family-name:var(--font-dm-sans)] text-sm font-medium">
                     {benefit}
@@ -35,20 +35,20 @@ export function CommunitySection() {
                 </div>
               ))}
             </div>
-            <button className="w-fit bg-white text-primary px-10 py-4 rounded-xl font-[family-name:var(--font-dm-sans)] text-sm font-medium hover:bg-surface-container transition-all duration-200 mt-2">
+            <button className="w-fit bg-white dark:bg-on-primary-container text-primary dark:text-primary-container px-8 py-3.5 rounded-xl font-[family-name:var(--font-dm-sans)] text-sm font-medium hover:bg-white/90 dark:hover:bg-on-primary-container/90 transition-all duration-200 mt-1">
               Join WhatsApp Channel Now
             </button>
           </div>
         </AnimatedSection>
 
         <AnimatedSection direction="right">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-700">
             <img
               className="w-full h-full object-cover aspect-[4/3]"
               src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop&q=80"
               alt="Student community networking"
             />
-            <div className="absolute inset-0 bg-primary/20 backdrop-blur-[2px]" />
+            <div className="absolute inset-0 bg-primary/20 dark:bg-primary-container/30 backdrop-blur-[2px]" />
           </div>
         </AnimatedSection>
       </div>
